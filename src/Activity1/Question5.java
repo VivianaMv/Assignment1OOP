@@ -10,20 +10,20 @@ public class Question5 {
 		
 		Scanner kb = new Scanner(System.in);
 	    System.out.print("Please give me the number: ");	
-	
-	    int num = kb .nextInt();
-	    if (num > 0) {
-	    	System.out.println("the absolute value of a number is: ");
+	    double num = kb.nextDouble();
+	    double absnum;
+	    
+	    if (num < 0) {
+	    	absnum = (-1) * num;
+	    	
 	    }else {
-			
-			int absolute = 1;
-			for (int i = 1; i<= num ; i++) {
-				absolute = absolute * i;
+	    	absnum = num;
+						
 			}
-			System.out.println("the factorial is " + absolute);
+			System.out.println("the factorial is " + absnum);
 		}
 	
 	}
 	
 
-}
+
